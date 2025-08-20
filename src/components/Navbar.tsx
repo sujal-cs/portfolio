@@ -18,7 +18,7 @@ export const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-lg hover:underline"
+              className="text-lg hover:text-secondary-accent"
             >
               {link.name}
             </a>
