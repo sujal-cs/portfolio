@@ -4,6 +4,7 @@ import Link from "next/link";
 import { HoverInfo } from "@/components/HoverInfo";
 
 export const Hero: React.FC = () => {
+
   return (
     <div className="flex gap-3">
       <Image
@@ -13,23 +14,17 @@ export const Hero: React.FC = () => {
         alt="image"
         className="rounded-lg  border-2 border-primary-accent"
       />
-      <div>
-        <h2 className="font-bold text-2xl">{creatorName}</h2>
-        <h4 className="font-light text-lg mt-[-0.35rem]">{title}</h4>
-        <div className="flex flex-wrap gap-1.5">
-            {socials.map((social) => (
-            <Link key={social.id} href={social.link}>
-              <HoverInfo text={social.name}>
-                <Image
-                src={social.icon}
-                height={27}
-                width={27}
-                alt={social.name}
-                className="dark:invert-[0.85] invert-[0.15]"
-                />
+      <div className="flex flex-col gap-1">
+        <h2 className="font-bold text-2xl md:text-3xl">{creatorName}</h2>
+        <h4 className="font-light text-lg md:text-xl mt-[-8px]">{title}</h4>
+        <div className="flex flex-wrap gap-1.5 md:gap-2">
+          {socials.map((social) => (
+            <Link key={social.id} href={social.link} target="__blank">
+              <HoverInfo text={social.name}> 
+                  <p className="text-2xl border border-primary-accent rounded-md p-1 hover:bg-pri">{social.icon && <social.icon />}</p>
               </HoverInfo>
             </Link>
-            ))}
+          ))}
         </div>
       </div>
     </div>

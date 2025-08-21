@@ -15,3 +15,7 @@
   @apply max-w-4xl mx-auto px-5 py-4;
 }
 
+.btn {
+  @apply cursor-pointer select-none transition-colors duration-100 flex flex-row gap-1 items-center bg-zinc-900 border border-primary-accent hover:bg-zinc-800 px-2 py-2 rounded-md;
+}
+
