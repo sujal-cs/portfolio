@@ -75,7 +75,7 @@ const achivements = [
   },
   {
     title: "CodeHunt Hackathon 2025",
-    lines: "Secured **2nd place** for building a scalable, functional, and user-focused product under tight deadlines\n Developed **Invest Vault**, a web app connecting startups with potential investors, using **Next.js + TypeScript**\n Recognized for **UI/UX quality, technical execution, and business relevance"
+    lines: "Secured 2nd place for building a scalable, functional, and user-focused product under tight deadlines\n Developed Invest Vault, a web app connecting startups with potential investors, using Next.js + TypeScript\n Recognized for UI/UX quality, technical execution, and business relevance"
   },
   {
     title: "Synergy 2025- Technical poster presentation",
