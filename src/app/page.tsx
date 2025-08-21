@@ -1,14 +1,10 @@
-import { Container } from "@/components/Container";
-import { Navbar } from "@/components/Navbar";
-
+import { LandingPage } from "@/components/homeScreen/landingPage";
+import { MainScreen } from "@/layout/MainScreen";
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <Container>
-        <div>Rest of the portfolio</div>
-      </Container>
-    </>
+    <MainScreen>
+      <LandingPage />
+    </MainScreen>
   );
 }

@@ -7,3 +7,11 @@
   --color-secondary-accent: #a6a6a6;
 }
 
+.main-screen {
+  @apply py-3
+}
+
+.screen {
+  @apply max-w-4xl mx-auto px-5 py-4;
+}
+
