@@ -16,6 +16,11 @@
 }
 
 .btn {
-  @apply cursor-pointer select-none transition-colors duration-100 flex flex-row gap-1 items-center bg-zinc-900 border border-primary-accent hover:bg-zinc-800 px-2 py-2 rounded-md;
-}
+  @apply cursor-pointer select-none transition-colors duration-100 flex flex-row gap-1 items-center px-2 py-2 rounded-md border border-primary-accent;
 
+  /* Light mode defaults */
+  @apply bg-zinc-100 text-zinc-900 hover:bg-zinc-200;
+
+  /* Dark mode overrides */
+  @apply dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800;
+}

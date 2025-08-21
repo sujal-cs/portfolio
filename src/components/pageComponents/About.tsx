@@ -4,7 +4,7 @@ export const About: React.FC = () => {
   return (
     <section id="#about" className="flex flex-col gap-1 md:gap-2">
       <SectionTitle title="About Me" />
-      <div className="flex flex-col text-base gap-0.5">
+      <div className="flex flex-col text-base gap-0.5 text-gray-700 dark:text-gray-400">
         <p>
           Hi, I&apos;m Sujal Lokhande, an engineering student with a focus on
           programming and technology. I enjoy exploring more technologies,

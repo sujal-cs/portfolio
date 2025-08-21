@@ -20,6 +20,7 @@ export const LandingPage = () => {
           {/* TODO:
           projects section */}
         </div>
+        {/* <p>Note: Portfolio is heavly inspired by https://rinkit.tech/ do check out</p> */}
       </Screen>
     </>
   );

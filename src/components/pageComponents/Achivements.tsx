@@ -8,10 +8,10 @@ export const Achivements: React.FC = () => {
 
       {achivements.map((achivement, index) => (
         <div key={index}>
-          <h4 className="font-semibold">{achivement.title}</h4>
+          <h4 className="font-semibold ">{achivement.title}</h4>
           <div>
             {achivement.lines.split("\n").map((line, idx) => (
-              <div key={idx}>- {line}</div>
+              <div key={idx} className="text-gray-700 dark:text-gray-400">- {line}</div>
             ))}
           </div>
         </div>
