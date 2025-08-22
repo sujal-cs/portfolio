@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
         width={115}
         src={heroImg}
         alt="image"
-        className="rounded-lg  border-2 border-gray-300 dark:border-primary-accent"
+        className="rounded-lg  border-2 border-gray-300 dark:border-neutral-700"
       />
       <div className="flex flex-col gap-1">
         <h2 className="font-bold text-2xl md:text-3xl">{creatorName}</h2>
@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
           {socials.map((social) => (
             <Link key={social.id} href={social.link} target="__blank">
               <HoverInfo text={social.name}> 
-                  <p className="text-2xl border border-gray-300 dark:border-primary-accent rounded-md p-1 hover:bg-pri">{social.icon && <social.icon />}</p>
+                  <p className="text-2xl border border-gray-300 dark:border-neutral-700 rounded-md p-1 hover:bg-pri">{social.icon && <social.icon />}</p>
               </HoverInfo>
             </Link>
           ))}

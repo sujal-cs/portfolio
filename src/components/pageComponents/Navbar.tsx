@@ -1,8 +1,8 @@
-"use client"
-import Link from "next/link"
-import { navLinks, images } from "@/data/data"
-import Image from "next/image"
-import { useState } from "react"
+"use client";
+import Link from "next/link";
+import { navLinks, logos } from "@/data/data";
+import Image from "next/image";
+import { useState } from "react";
 
 export const Navbar = () => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -10,30 +10,37 @@ export const Navbar = () => {
   return (
     <nav className="flex items-center justify-between font-semibold mt-[-15px] md:mt-[-10px] md:text-xl">
       <div className="flex items-center gap-1">
-        <Image
-          src={`/images/${images[imageIndex]}`}
-          height={30}
-          width={30}
-          alt="logo"
-          onClick={(e) => {
-            e.preventDefault();
-            setImageIndex((prev) => (prev + 1) % images.length);
-          }}
-          className="cursor-pointer hover:translate-y-[-3px] border-2 border-gray-300 dark:border-primary-accent rounded-lg"
-        />
-        <Link href={"/"}>SL.</Link>
+        <div
+          onClick={() => setImageIndex((prev) => (prev + 1) % logos.length)}
+          className="cursor-pointer border-2 border-gray-300 dark:border-neutral-700 rounded-lg"
+        >
+          {logos.map((logo, index) => (
+            <Image
+              key={logo}
+              src={`/images/${logo}`}
+              height={30}
+              width={30}
+              alt="logo"
+              priority={true} // preload
+              className={`${index === imageIndex ? "block" : "hidden"} rounded-lg`}
+            />
+          ))}
+        </div>
       </div>
+
       <div className="flex gap-2">
-        {navLinks.map((link) => (
-          <Link
-            key={link.name}
-            href={link.href}
-            className="hover:text-secondary-accent"
-          >
-            {link.name}
-          </Link>
+        {navLinks.map((link, index) => (
+          <div key={index}>
+            <Link
+              key={link.name}
+              href={link.href}
+              className="hover:text-neutral-400"
+            >
+              {link.name}
+            </Link>
+          </div>
         ))}
       </div>
     </nav>
-  )
-}
+  );
+};

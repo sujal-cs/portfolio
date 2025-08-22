@@ -22,7 +22,7 @@ const creatorName: string = "Sujal Lokhande"
 
 const title: string = "Engineer"
 
-const images = ["monkey.png", "space-shuttle.png", "electronics.png", "camera.png"];
+const logos = ["monkey.png", "space-shuttle.png", "electronics.png", "camera.png"];
 
 interface Social {
   id: number;
@@ -53,8 +53,7 @@ const socials: Social[] = [
 ]
 
 const navLinks = [
-  { name: "About", href: "#about" },
-  { name: "Blogs", href: "/blogs" },
+  { name: "Blogs", href: "#blogs" },
   { name: "Projects", href: "#projects" },
 ]
 
@@ -109,7 +108,7 @@ const skills = [
 export {
   creatorName,
   title,
-  images,
+  logos,
   socials,
   navLinks,
   heroImg,

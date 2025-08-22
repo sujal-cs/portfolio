@@ -5,6 +5,7 @@ import { About } from "@/components/pageComponents/About";
 import { Achivements } from "@/components/pageComponents/Achivements";
 import { Skills } from "@/components/pageComponents/Skills";
 import { Works } from "@/components/pageComponents/Works";
+import { Education } from "../pageComponents/Education";
 
 export const LandingPage = () => {
   return (
@@ -14,8 +15,9 @@ export const LandingPage = () => {
           <Navbar />
           <Hero />
           <About />
-          <Achivements />
           <Skills />
+          <Achivements />
+          <Education />
           <Works />
           {/* TODO:
           projects section */}
