@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
       />
       <div className="flex flex-col gap-1">
         <h2 className="font-bold text-2xl md:text-3xl">{creatorName}</h2>
-        <h4 className="font-light text-lg md:text-xl mt-[-8px]">{title}</h4>
+        <h4 className="font-light text-lg md:text-xl mt-[-6px]">{title}</h4>
         <div className="flex flex-wrap gap-1.5 md:gap-2">
           {socials.map((social) => (
             <Link key={social.id} href={social.link} target="__blank">

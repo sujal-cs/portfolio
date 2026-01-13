@@ -20,7 +20,7 @@ import { VscTerminalLinux } from "react-icons/vsc"
 
 const creatorName: string = "Sujal Lokhande"
 
-const title: string = "Engineer"
+const title: string = "EXTC- Enginnering"
 
 const logos = ["monkey.png", "space-shuttle.png", "electronics.png", "camera.png"];
 

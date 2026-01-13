@@ -13,6 +13,11 @@ export const Education: React.FC = () => {
       duration: "2022-25",
       location: "Government Polytechnic, Nagpur",
       grade: "85.25%"
+    },
+    {
+      title: "B.Tech- EXTC",
+      duration: "2025-present",
+      location: "Pillai College of Enginnering, New Panvel"
     }
   ]
 
