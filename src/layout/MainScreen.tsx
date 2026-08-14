@@ -3,5 +3,5 @@ interface mainScreenProps {
 }
 
 export const MainScreen: React.FC<mainScreenProps> = ({ children }) => {
-  return <div className="main-screen">{children}</div>;
+  return <main className="main-screen">{children}</main>;
 };

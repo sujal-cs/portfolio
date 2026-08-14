@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
         className="rounded-lg border border-line shadow-sm shadow-stone-950/10"
       />
       <div className="flex flex-col gap-1">
-        <h2 className="text-xl font-bold md:text-3xl">{creatorName}</h2>
+        <h1 className="text-xl font-bold md:text-3xl">{creatorName}</h1>
         <h4 className="mt-[-4px] text-base font-light text-muted md:mt-[-6px] md:text-xl">
           {title}
         </h4>
