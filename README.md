@@ -38,16 +38,11 @@ I’ve also designed it as a **customizable template**, so that anyone can clone
 
 ---
 
-## 📸 Demo / Screenshots
-
-N.A
-
----
-
 ## 📬 Contact
 
-* **Portfolio:** \https://sujal-lokhande-portfolio.vercel.app/
-* **GitHub:** \https://github.com/sujal-cs/portfolio
-* **LinkedIn:** \https://www.linkedin.com/in/sujal-lozkhande-s70
+* **Portfolio:** [sujal-lokhande-portfolio.vercel.app](https://sujal-lokhande-portfolio.vercel.app/)
+* **GitHub:** [github.com/sujal-cs](https://github.com/sujal-cs)
+* **LinkedIn:** [linkedin.com/in/sujal-lozkhande-s70](https://www.linkedin.com/in/sujal-lozkhande-s70)
+* **X:** [x.com/endermanCS](https://x.com/endermanCS)
 
 ---
