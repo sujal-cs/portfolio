@@ -1,39 +1,36 @@
 import { SectionTitle } from "../SectionTitle";
+import { education } from "@/data/data";
 
 export const Education: React.FC = () => {
-  const education = [
-    {
-      title: "10th SSC Maharasthra Board",
-      duration: "2021-22",
-      location: "S.V.M Motala",
-      grade: "92.60%"
-    },
-    {
-      title: "Diploma In Information Technology",
-      duration: "2022-25",
-      location: "Government Polytechnic, Nagpur",
-      grade: "85.25%"
-    },
-    {
-      title: "B.Tech- EXTC",
-      duration: "2025-present",
-      location: "Pillai College of Enginnering, New Panvel"
-    }
-  ]
-
   return (
-    <section className="flex flex-col gap-1 md:gap-2">
+    <section className="flex flex-col gap-1.5">
       <SectionTitle title="Education" />
-      {education.map((edu, index) => (
-        <div key={index}>
-          <div className="flex justify-between">
-            <h4 className="font-semibold">{edu.title}</h4>
-            {edu.duration && <p className="italic font-light">{edu.duration}</p>}
+      <div className="flex flex-col gap-2">
+        {education.map((edu) => (
+          <div key={edu.id} className="space-y-0.5">
+            <div className="flex justify-between gap-3">
+              <h4 className="text-sm font-semibold md:text-base">
+                {edu.title}
+              </h4>
+              {edu.duration && (
+                <p className="text-sm font-light text-muted italic md:text-base">
+                  {edu.duration}
+                </p>
+              )}
+            </div>
+            {edu.location && (
+              <p className="text-sm leading-5 text-muted md:text-base md:leading-6">
+                - {edu.location}
+              </p>
+            )}
+            {edu.grade && (
+              <p className="text-sm leading-5 text-muted md:text-base md:leading-6">
+                - {edu.grade}
+              </p>
+            )}
           </div>
-          {edu.location && <p className="text-gray-700 dark:text-gray-400">- {edu.location}</p>}
-          {edu.grade && <p className="text-gray-700 dark:text-gray-400">- {edu.grade}</p>}
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
-}
+};

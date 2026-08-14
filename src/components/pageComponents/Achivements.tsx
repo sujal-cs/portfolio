@@ -3,21 +3,25 @@ import { achivements } from "@/data/data";
 
 export const Achivements: React.FC = () => {
   return (
-    <section className="flex flex-col gap-1 md:gap-2">
+    <section className="flex flex-col gap-1.5">
       <SectionTitle title="Achivements" />
 
-      {achivements.map((achivement, index) => (
-        <div key={index}>
-          <h4 className="font-semibold">{achivement.title}</h4>
-          <div>
-            {achivement.lines.split("\n").map((line, idx) => (
-              <div key={idx} className="text-gray-700 dark:text-gray-400">- {line}</div>
-            ))}
+      <div className="flex flex-col gap-2">
+        {achivements.map((achivement, index) => (
+          <div key={index} className="space-y-0.5">
+            <h4 className="text-sm font-semibold text-ink md:text-base">
+              {achivement.title}
+            </h4>
+            <div className="text-sm leading-5 md:text-base md:leading-6">
+              {achivement.lines.split("\n").map((line, idx) => (
+                <div key={idx} className="text-muted">
+                  - {line}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 };
-
-

@@ -1,23 +1,14 @@
 import { SectionTitle } from "@/components/SectionTitle";
+import { aboutParagraphs } from "@/data/data";
 
 export const About: React.FC = () => {
   return (
-    <section id="#about" className="flex flex-col gap-1 md:gap-2">
+    <section id="about" className="flex flex-col gap-1.5">
       <SectionTitle title="About Me" />
-      <div className="flex flex-col text-base gap-0.5 text-gray-700 dark:text-gray-400">
-        <p>
-          Hi, I&apos;m Sujal Lokhande, an engineering student with a focus on
-          programming and technology. I enjoy exploring more technologies,
-          creating practical solutions, and continuously expanding my technical
-          knowledge.
-        </p>
-        <p>
-          My interests span across software development, web technologies, and
-          exploring the intersection of creativity and code. I also have a keen
-          interest in Machine Learning, Deep Learning, and Artificial
-          Intelligence. While I am not an expert, I have a good understanding of
-          PyTorch and enjoy experimenting with it to build and train models.
-        </p>
+      <div className="flex flex-col gap-1 text-sm leading-5 text-muted md:text-base md:leading-6">
+        {aboutParagraphs.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
       </div>
     </section>
   );

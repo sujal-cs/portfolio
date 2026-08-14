@@ -1,24 +1,35 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --color-dark: #121212;
-  --color-light: #f5f5f5;
+  --color-canvas: #efefed;
+  --color-surface: #f8f8f6;
+  --color-ink: #202124;
+  --color-muted: #626467;
+  --color-line: #d5d6d2;
+  --color-accent: #b4233f;
+  --color-accent-soft: #f7e5e9;
+}
+
+.dark {
+  --color-canvas: #18191b;
+  --color-surface: #222326;
+  --color-ink: #f1f2f4;
+  --color-muted: #b6b8bd;
+  --color-line: #3a3c40;
+  --color-accent: #ef8092;
+  --color-accent-soft: #41242b;
 }
 
 .main-screen {
-  @apply py-3
+  @apply pt-1 pb-3 md:pt-2;
 }
 
 .screen {
-  @apply max-w-4xl mx-auto px-5 py-4;
+  @apply mx-auto max-w-4xl px-5 pt-1 pb-4 md:pt-2;
 }
 
 .btn {
-  @apply cursor-pointer select-none transition-colors duration-100 flex flex-row gap-1 items-center px-2 py-2 rounded-md border border-neutral-700;
-
-  /* Light mode defaults */
-  @apply bg-zinc-100 text-zinc-900 hover:bg-zinc-200;
-
-  /* Dark mode overrides */
-  @apply dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800;
+  @apply flex cursor-pointer flex-row items-center gap-1 rounded-md border border-line bg-surface px-2.5 py-2 text-sm text-ink shadow-sm shadow-stone-950/5 transition-colors duration-150 select-none hover:border-accent/40 hover:bg-accent md:text-base;
 }
