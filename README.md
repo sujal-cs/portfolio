@@ -46,8 +46,8 @@ N.A
 
 ## 📬 Contact
 
-* **Portfolio:** \[your deployed portfolio link]
-* **GitHub:** \[your GitHub link]
-* **LinkedIn:** \[your LinkedIn link]
+* **Portfolio:** \https://sujal-lokhande-portfolio.vercel.app/
+* **GitHub:** \https://github.com/sujal-cs/portfolio
+* **LinkedIn:** \https://www.linkedin.com/in/sujal-lozkhande-s70
 
 ---
