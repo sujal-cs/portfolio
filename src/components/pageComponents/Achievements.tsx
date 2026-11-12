@@ -1,19 +1,19 @@
 import { SectionTitle } from "@/components/SectionTitle";
-import { achivements } from "@/data/data";
+import { achievements } from "@/data/data";
 
-export const Achivements: React.FC = () => {
+export const Achievements: React.FC = () => {
   return (
     <section className="flex flex-col gap-1.5">
-      <SectionTitle title="Achivements" />
+      <SectionTitle title="Achievements" />
 
       <div className="flex flex-col gap-2">
-        {achivements.map((achivement, index) => (
+        {achievements.map((achievement, index) => (
           <div key={index} className="space-y-0.5">
             <h4 className="text-sm font-semibold text-ink md:text-base">
-              {achivement.title}
+              {achievement.title}
             </h4>
             <div className="text-sm leading-5 md:text-base md:leading-6">
-              {achivement.lines.split("\n").map((line, idx) => (
+              {achievement.lines.split("\n").map((line, idx) => (
                 <div key={idx} className="text-muted">
                   - {line}
                 </div>

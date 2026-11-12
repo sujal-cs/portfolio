@@ -80,14 +80,14 @@ const navLinks = [
 const heroImg = "/images/sujal-computer.jpg";
 
 const aboutParagraphs = [
-  "Hi, I'm Sujal Lokhande, an engineering student with a focus on programming and technology. I enjoy exploring more technologies, creating practical solutions, and continuously expanding my technical knowledge.",
+  "Hi, I'm Sujal Lokhande, an Engineering student with a focus on programming and technology. I enjoy exploring more technologies, creating practical solutions, and continuously expanding my technical knowledge.",
   "My interests span across software development, web technologies, and exploring the intersection of creativity and code. I also have a keen interest in Machine Learning, Deep Learning, and Artificial Intelligence. While I am not an expert, I have a good understanding of PyTorch and enjoy experimenting with it to build and train models.",
 ];
 
 const education = [
   {
     id: "secondary-school",
-    title: "10th SSC Maharasthra Board",
+    title: "10th SSC Maharashtra Board",
     duration: "2021-22",
     location: "S.V.M Motala",
     grade: "92.60%",
@@ -107,9 +107,9 @@ const education = [
   },
 ];
 
-const achivements = [
+const achievements = [
   {
-    title: "Smart India Hackaton (SIH'24)- ISRO",
+    title: "Smart India Hackathon (SIH'24)- ISRO",
     lines:
       "Ranked 4th in the grand finale out of 49 finalist teams\n Built a deep learning solution for SAR image colorization, addressing a real-world industry problem.\n Built a web interface along with greenery rate and chatbot",
   },
@@ -121,12 +121,12 @@ const achivements = [
   {
     title: "Synergy 2025- Technical poster presentation",
     lines:
-      "3rd position for effictively simplifying complex concepts into engaging, understandable content\n Presented a research-backed technical project with clear visualization and structured flow\n Highlighted strengths in communication, technical storytelling, and design clarity",
+      "3rd position for effectively simplifying complex concepts into engaging, understandable content\n Presented a research-backed technical project with clear visualization and structured flow\n Highlighted strengths in communication, technical storytelling, and design clarity",
   },
   {
     title: "HackHazards Hackathon 2025",
     lines:
-      "Ranked in the top 100 teams among 2900+ teams and 5700+ solo participants\n Designed and developed a gamified habit tracker insipired by Solo Leveling\n Built a web based habit tracker using vite-react with UI inspired by Solo Leveling anime",
+      "Ranked in the top 100 teams among 2900+ teams and 5700+ solo participants\n Designed and developed a gamified habit tracker inspired by Solo Leveling\n Built a web based habit tracker using vite-react with UI inspired by Solo Leveling anime",
   },
 ];
 
@@ -165,6 +165,6 @@ export {
   heroImg,
   aboutParagraphs,
   education,
-  achivements,
+  achievements,
   skills,
 };
